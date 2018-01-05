@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="/static/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/static/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: aliceblue;">
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-fixed-top" role="navigation" style="background-color: white">
+				<div class="navbar-header">
+                    <a class="navbar-brand" href="/problemset/" style="font-family: 'Times New Roman';margin-left: 100px">WEB</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/problemset/"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+                        <li><a href="/ask/"><span class="glyphicon glyphicon-pencil"></span>提问</a></li>
+					</ul>
+					<form class="navbar-form navbar-left" action="/problemset/" method="post">
+						<div class="form-group">
+                            <input type="text" class="form-control" id="searchtext" name="searchtext" placeholder="搜索您感兴趣的内容...">
+                            <button type="submit" class="btn btn-primary" style="margin-left: -4px"><span class="glyphicon glyphicon-search"></span></button>
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span><strong>主页</strong></a></li>
+                        <li><a href="/"><span class="glyphicon glyphicon-off"></span><strong>退出</strong></a></li>
+					</ul>
+				</div>
+			</nav>
+
+            <!--循环开始-->
+			<div class="jumbotron" style="background-color: white;margin-top: 70px">
+                <form action="/problemset/" method="post">
+
+                </form>
+		    </div>
+            <!--循环结束-->
+	</div>
+</div>
+</div>
+</body>
+</html>
